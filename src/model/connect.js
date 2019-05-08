@@ -1,2 +1,3 @@
 var mongoose = require('mongoose');
-mongoose.connect("mongodb://localhost:27017/uit_doanhoi_ai", { useNewUrlParser: true });
+var {DATA_COLLECTION} = require("config")
+mongoose.connect(`mongodb://localhost:27017/${DATA_COLLECTION}`, { useNewUrlParser: true });

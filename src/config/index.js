@@ -1,11 +1,12 @@
 module.exports = {
     PORT: "3000",
-    SECRET: "template_secret",
+    SECRET: "Express_Nodejs_Template_secret",
+    DATA_COLLECTION: "Express_Nodejs_Template",
     SESSION: {
-        name: 'session_template_name',
+        name: 'session_Express_Nodejs_Template',
         proxy: true,
         resave: true,
-        secret: "session_template.secrect", // session secret
+        secret: "session_Express_Nodejs_Template.secrect", // session secret
         resave: false,
         saveUninitialized: true,
         cookie: {
@@ -13,6 +14,6 @@ module.exports = {
         }
     },
     DEBUG: {
-        server: "template_name_project"
+        server: "Express_Nodejs_Template"
     }
 }
