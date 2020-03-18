@@ -1,19 +1,21 @@
+let appName = "Express_Nodejs_Template";
+
 module.exports = {
-    PORT: "3000",
-    SECRET: "Express_Nodejs_Template_secret",
-    DATA_COLLECTION: "Express_Nodejs_Template",
+    PORT: `3000`,
+    SECRET: `${appName}_secret`,
+    DATA_COLLECTION: `${appName}`,
     SESSION: {
-        name: 'session_Express_Nodejs_Template',
+        name: 'session_${appName}',
         proxy: true,
         resave: true,
-        secret: "session_Express_Nodejs_Template.secrect", // session secret
+        secret: `session_${appName}.secrect`, // session secret
         resave: false,
         saveUninitialized: true,
         cookie: {
-            secure: false /*Use 'true' without setting up HTTPS will result in redirect errors*/,
+            secure: false /*Use 'true' without setting up HTTPS will result in redirect errors*/ ,
         }
     },
     DEBUG: {
-        server: "Express_Nodejs_Template"
+        server: `${appName}`
     }
 }
